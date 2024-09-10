@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 20px;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{  
+    display: grid;
+    margin-top: 10%;
+    background: #001f38;
+    justify-content: center;
+}
+form
+{
+    justify-self: center;   
+}
+table
+{
+    border: 1px solid #45f3ff;
+    text-align: center;        
+}
+td, tr, th
+{
+    color: #45f3ff;
+    background: #1c1c1c;
+}
+select
+{
+    color: #45f3ff;
+    width: 100%;
+    background: #1c1c1c;
+    text-align: center;
+}
+
+select, input[type="submit"], input[name="actualizar"], input[name="search"], input[name="volverMenu"]
+{
+    cursor: pointer;
+}
+
+input[type="submit"]
+{
+    color: #45f3ff;
+    border: 1px solid #45f3ff;
+    background: #1c1c1c;
+}
+input[name="keywords"]
+{
+    color: #1c1c1c;
+    border: none;     
+    height: 14px;   
+    text-align: center;
+    background: #45f3ff;
+    margin-bottom: 2px;
+}
+input[name="actualizar"]
+{
+    width: 100%;
+}
+input[name="search"]
+{
+    width: 50%;
+}
+input[name="volverMenu"]
+{
+    width: 150px;
+    margin-top: 70px;
+}
+input[name="volverMenu"]:hover, input[name="actualizar"]:hover
+{
+    color: #1c1c1c;
+    background: #45f3ff;
+}
+table, input[name="volverMenu"]
+{
+    scale: 1.75;
+}

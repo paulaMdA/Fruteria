@@ -1,0 +1,91 @@
+* {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #001f38;
+    color: #45f3ff;
+    text-align: center;
+}
+h1 {
+    margin-top: 50px;
+    font-size: 28px;
+    color: #45f3ff;
+    font-size: 46px;
+    
+}
+
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.producto {
+    width: 300px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+
+.producto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    margin-bottom: 10px;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+ input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #45f3ff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #45f3ff;
+    cursor: pointer;
+    font-size: 17px;
+}
+input[type="number"] {
+    width: 20%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #45f3ff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #45f3ff;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+input[type="submit"]:hover {
+    background: #45f3ff;
+    color: #001f38;
+    transform: translateY(-3px);
+}
+
+.form {
+    margin-top: 20px;
+}
+
+

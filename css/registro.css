@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    background: #001f38;
+    align-items: center;
+    justify-content: space-around;
+}
+.loader
+{
+    width: 200px;
+    height: 100vh;
+    position: relative;
+}
+.loader::before
+{
+    width: 60px;
+    height: 10px;
+    bottom: 75px;
+    filter: blur(4px);
+    content: '';
+    opacity: 0.5;
+    position: absolute;
+    animation: shadow 2s linear infinite;
+    background: #000;
+    border-radius: 50%;
+    animation-delay: -1s;
+}
+@keyframes shadow
+{
+    0%, 100%
+    {
+        opacity: 0.2;
+        transform: scale(1.5);
+    }
+    30%, 40%
+    {
+        opacity: 0.5;
+        transform: scale(0.8);
+    }
+}
+.loader .semi-circle
+{
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+    border-radius: 50%;
+    border-bottom: 100px solid #278628;
+}
+@keyframes rotate
+{
+    0%
+    {
+        transform: rotate(360deg);
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+.bolas
+{
+    top: calc(50% - 50px);
+    left: calc(50% + 50px);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    animation: bounce 2s linear infinite;
+    background: #fff;
+    box-shadow: inset 2px 2px 10px rgba(0,0,0,0.5);
+    border-radius: 50%;        
+}
+@keyframes bounce
+{
+    0%, 100%
+    {
+        transform: translateY(0px);
+    }
+    30%
+    {
+        transform: translateY(-200px);
+    }
+    40%
+    {
+        transform: translateY(-250px);
+    }
+}
+.bolas2
+{
+    top: calc(50% + 0px);
+    left: calc(50% - 100px);
+    z-index: 1;
+    position: absolute;
+    animation: bounce2 2s linear infinite;
+    animation-delay: -1s;
+}
+@keyframes bounce2
+{
+    0%, 100%
+    {
+        transform: translateY(0px);
+    }
+    30%
+    {
+        transform: translateY(200px);
+    }
+    40%
+    {
+        transform: translateY(250px);
+    }
+}
+
+form
+{
+    width: 450px;
+    height: 700px;
+    border: 2px solid #000;
+    display: grid;
+    background: #28292d;
+    padding-top: 35px;        
+    border-radius: 2em;
+    justify-content: center;
+}
+form input
+{        
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5%;        
+    margin-left: -30%;
+    margin-right: -30%;         
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #45f3ff; 
+}
+label
+{
+    color: #45f3ff;
+    font-size: 20px;
+    text-align: center;        
+    margin-bottom: -13.5%;
+}
+input[type="submit"]
+{
+    color: #45f3ff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background: none;       
+}
+input[type="submit"]:hover
+{
+    color: #000;  
+    background: #45f3ff;
+}

@@ -1,0 +1,90 @@
+/* Estilos generales */
+* {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+}
+
+body {
+    background-color: #001f38;
+    color: #45f3ff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 46px;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #45f3ff;
+    padding: 8px;
+}
+
+th {
+    background-color: #45f3ff;
+    color: #001f38;
+}
+
+tr:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+tr:nth-child(odd) {
+    background-color: #0f3057;
+}
+
+/* Estilos para botones */
+button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #45f3ff;
+    color: #001f38;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #001f38;
+    color: #45f3ff;
+}
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.buttons-container form {
+    margin-right: 10px;
+}
+
+.buttons-container input[type="submit"] {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #45f3ff;
+    color: #001f38;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons-container input[type="submit"]:hover {
+    background-color: #001f38;
+    color: #45f3ff;
+}

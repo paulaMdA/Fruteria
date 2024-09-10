@@ -1,0 +1,184 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}    
+body
+{        
+    display: grid;
+    min-height: 100vh;
+    background: url(../img/tienda.jpeg);
+    margin-left: 100px;
+    align-items: center;
+    justify-content: left;
+    background-size: 900px 900px;
+    background-color: rgb(26,84,128);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+body h1
+{
+    font-size: 65px;
+    text-align: center;
+    color: white;
+    
+}
+.box
+{
+    width: 420px;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+    background: #1c1c1c;
+    border-radius: 8px;
+}
+.box::before
+{
+    top: -50%;
+    left: -50%;
+    width: 420px;
+    height: 460px;
+    content: '';
+    position: absolute;
+    animation: animate 6s linear infinite;
+    background: linear-gradient(0deg, green, #45f3ff, red, white);
+    transform-origin: bottom right;
+}
+.box::after
+{
+    top: -50%;
+    left: -50%;
+    width: 420px;
+    height: 460px;
+    content: '';
+    position: absolute;
+    animation: animate 6s linear infinite;        
+    background: linear-gradient(0deg, green, #45f3ff, red, white);
+    animation-delay: -3s;
+    transform-origin: bottom right;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.form
+{
+    inset: 2px;
+    display: flex;
+    z-index: 10;
+    padding: 50px 40px;
+    position: absolute;
+    background: #28292d;
+    border-radius: 8px;
+    flex-direction: column;
+}
+.form h2
+{
+    color: #45f3ff;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.inputBox
+{
+    width: 100%;
+    position: relative;
+    font-size: 20px;
+    margin-top: 35px;
+    padding-top: 15px;        
+}
+.inputBox input
+{
+    color: #333;
+    width: 100%;
+    height: 44px;
+    border: none;
+    outline: none;
+    padding: 20px 10px 20px;
+    z-index: 10;
+    position: relative;
+    font-size: 1em;
+    background: transparent;
+    margin-top: 20px;
+    letter-spacing: 0.05em;
+}
+.inputBox span
+{
+    left: 0;
+    color: #8f8f8f;
+    padding: 20px 10px 10px;
+    position: absolute;
+    font-size: 1em;
+    transition: 0.5s;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+}
+.inputBox input:valid ~ span, .inputBox input:focus ~ span
+{
+    color: #45f3ff;
+    transform: translateY(-34px);
+    font-size: 0.75em;
+}
+.inputBox i
+{
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    z-index: 9;
+    position: absolute;
+    transition: 0.5s;
+    background: #45f3ff;
+    border-radius: 4px;
+    pointer-events: none;
+}
+.inputBox input:valid ~ i, .inputBox input:focus ~ i
+{
+    height: 44px;
+}
+.links
+{
+    display: flex;
+    justify-content: space-between;
+}
+.links input
+{
+    color: #45f3ff;        
+    margin: 10px 0;
+    font-size: 1em;
+    text-decoration: none;
+    border: 0px;
+    background-color: #28292d;
+}
+.links input:hover, .links input:nth-child(2)
+{
+    color: #45f3ff;
+    cursor: pointer;
+}
+input[name="enviar"]
+{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 11px 25px;
+    font-size: 17px;
+    background: #45f3ff;
+    margin-top: 10px;        
+    font-weight: 600;
+    border-radius: 4px;        
+}
+input[name="enviar"]:active
+{
+    opacity: 0.8;
+}

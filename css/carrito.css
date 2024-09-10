@@ -1,0 +1,88 @@
+/* Estilos generales */
+* {
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #001f38;
+    color: #45f3ff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 80px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+table {
+    width: 80%; /* Ocupar todo el ancho disponible */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #45f3ff;
+}
+
+th {
+    background-color: #001f38;
+}
+
+tr:nth-child(even) {
+    background-color: #1c1c1c;
+}
+
+.form input[type="submit"] {
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #45f3ff;
+    color: #001f38;
+}
+
+.buttons-container {
+    margin-top: 20px;
+}
+
+.buttons-container form {
+    margin-top: 10px;
+}
+   /* Estilos para los botones */
+        .buttons-container {
+            margin-top: 20px;
+        }
+
+        .buttons-container form {
+            margin-top: 10px;
+        }
+
+        .buttons-container form input[type="submit"] {
+            width: auto; /* Ancho automático */
+            padding: 10px 20px; /* Padding personalizado */
+            margin: 5px; /* Margen entre botones */
+            border: 1px solid #45f3ff;
+            border-radius: 5px;
+            background-color: #1c1c1c;
+            color: #45f3ff;
+            font-size: 17px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .buttons-container form input[type="submit"]:hover {
+            background-color: #45f3ff;
+            color: #001f38;
+        }
